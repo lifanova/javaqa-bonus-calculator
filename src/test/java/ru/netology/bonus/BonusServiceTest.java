@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BonusServiceTest {
-  /*@ParameterizedTest
+  @ParameterizedTest
   @CsvSource(
       value={
           "'registered user, bonus under limit',100060,true,30",
@@ -22,7 +22,7 @@ class BonusServiceTest {
 
     // производим проверку (сравниваем ожидаемый и фактический):
     assertEquals(expected, actual);
-  }*/
+  }
 
   @ParameterizedTest
   @CsvFileSource(resources = "/data.csv")
